@@ -2,12 +2,12 @@ import { useTilt } from '../hooks/useTilt';
 import FadeIn from './FadeIn';
 
 const certs = [
-    { icon: '🗄️', bg: '#EBF2FD', title: 'Oracle DB Design & Programming with SQL', org: 'Oracle Academy' },
+    { icon: '🗄️', bg: '#EBF2FD', title: 'Oracle DB Design & Programming', org: 'Oracle Academy' },
     { icon: '📊', bg: '#EAF3DE', title: 'Introduction to Data Analysis', org: 'Online Certification' },
     { icon: '🐍', bg: '#FAEEDA', title: 'Crash Course on Python', org: 'Google / Coursera' },
     { icon: '🔬', bg: '#EEEDFE', title: 'Python Project for Data Science', org: 'IBM / Coursera' },
     { icon: '📗', bg: '#EAF3DE', title: 'Excel Basic for Data Analytics', org: 'Online Certification' },
-    { icon: '📈', bg: '#EBF2FD', title: 'Data Visualization & Dashboards — Excel & Cognos', org: 'IBM / Coursera' },
+    { icon: '📈', bg: '#EBF2FD', title: 'Data Visualization & Dashboards', org: 'IBM / Coursera' },
 ];
 
 function CertCard({ c }: { c: typeof certs[0] }) {
@@ -44,7 +44,11 @@ export default function Certifications() {
                 <div className="section-label">Training &amp; Certifications</div>
                 <div className="section-title">Credentials</div>
                 <p className="section-desc">Certifications that strengthen my competence in data analysis and professional development.</p>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(280px,1fr))', gap: '1rem' }}>
+                <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                    gap: '1.25rem'
+                }}>
                     {certs.map(c => <CertCard key={c.title} c={c} />)}
                 </div>
             </div>
