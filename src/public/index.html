@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Data Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="#" class="nav-logo">Sandy.</a>
+        <ul class="nav-links">
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#dashboard-ai">AI Talent</a></li>
+            <li><a href="#sql">SQL</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#sertifikasi">Certifications</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <div>
+                <div class="hero-tag">
+                    <span class="hero-tag-dot"></span>
+                    Open to Remote opportunities
+                </div>
+                <h1>Sandy Aprilyanto<br><span>Data Analyst</span></h1>
+                <p class="hero-sub">
+                    Entry-level Data Analyst focused on SQL, dashboarding, and turning operational data into business
+                    insights. Experienced in building dashboards and talent scoring systems that transform raw data into
+                    actionable business insights.
+                </p>
+                <div class="hero-btns">
+                    <a href="#dashboard" class="btn-primary">View Dashboard</a>
+                    <a href="#projects" class="btn-outline">View Projects</a>
+                    <a href="CV_Sandy_Aprilyanto.pdf" download class="btn-outline">Download CV</a>
+                </div>
+            </div>
+
+            <div>
+                <div class="hero-card fade-in">
+                    <div class="stat-item">
+                        <div class="stat-num">3.73</div>
+                        <div class="stat-label">GPA / 4.0</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">4+</div>
+                        <div class="stat-label">live analytics applications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">190k+</div>
+                        <div class="stat-label">transactions analyzed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">95%</div>
+                        <div class="stat-label">Data Accuracy</div>
+                    </div>
+                    <div class="hero-tools">
+                        <span class="tool-chip">SQL</span>
+                        <span class="tool-chip">Power BI</span>
+                        <span class="tool-chip">Excel</span>
+                        <span class="tool-chip">Python</span>
+                        <span class="tool-chip">Oracle DB</span>
+                        <span class="tool-chip">Looker Studio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dashboard-section" id="dashboard">
+        <div class="container fade-in">
+            <div class="section-label">Live Dashboard</div>
+            <div class="section-title">Sales<br>Dashboard</div>
+            <p class="section-desc">Real-time dashboard integrated with Looker Studio tracking KPIs, revenue, and
+                business trends live.</p>
+            <p>
+                <strong>Data Pipeline:</strong><br>
+                Raw Data → Data Cleaning (Python) → SQL Database → Analytical Queries → Looker Studio Dashboard
+
+                <br><br><strong>Explanation:</strong><br>
+                • Data is cleaned and transformed using Python (Pandas)<br>
+                • Stored in structured SQL tables<br>
+                • SQL queries generate KPIs and aggregated metrics<br>
+                • Results are visualized in Looker Studio dashboard
+            </p>
+            <div style="margin-top:1.5rem; font-size:13px; color:var(--ink3);">
+                <strong>Architecture Flow:</strong><br>
+                CSV Dataset → Python (Cleaning) → SQLite Database → SQL Queries → Looker Studio → Dashboard
+            </div>
+            <div class="dashboard-embed-wrapper">
+                <div class="dashboard-toolbar">
+                    <div class="dashboard-dots">
+                        <div class="dot dot-r"></div>
+                        <div class="dot dot-y"></div>
+                        <div class="dot dot-g"></div>
+                    </div>
+                    <div class="dashboard-title-bar">Looker Studio Sales Performance Dashboard</div>
+                    <div class="dashboard-actions">
+                        <a href="https://datastudio.google.com/reporting/9136a5d9-ee26-48e8-af84-0d1e1dd80aea/page/uggvF"
+                            target="_blank" class="dashboard-btn">Open Fullscreen ↗</a>
+                    </div>
+                </div>
+                <iframe class="looker-iframe"
+                    src="https://datastudio.google.com/embed/reporting/9136a5d9-ee26-48e8-af84-0d1e1dd80aea/page/uggvF"
+                    frameborder="0" allowfullscreen
+                    sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+                </iframe>
+            </div>
+            <div style="margin-top:1.5rem;">
+                <h4>How SQL Powers This Dashboard</h4>
+                <ul style="margin-top:8px; padding-left:18px; font-size:14px; color:var(--ink2);">
+                    <li><strong>KPI Cards:</strong> Generated using KPI Overview Query</li>
+                    <li><strong>Revenue Trend:</strong> Built from monthly aggregation query</li>
+                    <li><strong>Customer Segmentation:</strong> Derived from SQL grouping & aggregation</li>
+                    <li><strong>Profit Analysis:</strong> Calculated using margin and discount queries</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="dashboard-section" id="dashboard-ai">
+        <div class="container fade-in">
+            <div class="section-label">AI Intelligence</div>
+            <div class="section-title">AI Talent<br>Scoring System</div>
+            <p class="section-desc">
+                A data-driven Talent Match Intelligence system built on SQL pattern discovery + LLM integration.
+                Identifies success patterns from employee performance data via EDA, operationalizes them into modular
+                SQL scoring logic (CTE + median benchmarking), and surfaces insights through an AI-augmented Streamlit
+                dashboard.</p>
+            <p>
+                <strong>AI Pipeline:</strong><br>
+                Employee Data → EDA (Pattern Discovery) → SQL Scoring Logic (CTE) → LLM Integration → Streamlit
+                Dashboard
+
+                <br><br><strong>Explanation:</strong><br>
+                • EDA (heatmap, radar chart, correlation) identifies success patterns from top performers (rating 5)<br>
+                • Modular SQL scoring via CTE + percentile_cont for median-based benchmarking<br>
+                • LLM (OpenRouter API) generates job descriptions dynamically from role context<br>
+                • Output: Job Fit Score, candidate tier (High Match / At Risk), gap analysis per competency
+            </p>
+
+            <div style="margin-top:1.5rem; font-size:13px; color:var(--ink3);">
+                <strong>Architecture Flow:</strong><br>
+                Employee Data (Supabase) → EDA (Pattern Discovery) → SQL Scoring Engine (CTE) → LLM Integration
+                (OpenRouter) → Streamlit Dashboard
+            </div>
+
+            <div class="dashboard-embed-wrapper">
+                <div class="dashboard-toolbar">
+                    <div class="dashboard-dots">
+                        <div class="dot dot-r"></div>
+                        <div class="dot dot-y"></div>
+                        <div class="dot dot-g"></div>
+                    </div>
+                    <div class="dashboard-title-bar">AI Candidate Scoring Engine</div>
+                    <div class="dashboard-actions">
+                        <a href="https://ai-talent-match-intelligence.streamlit.app/" target="_blank"
+                            class="dashboard-btn">
+                            Open Fullscreen ↗
+                        </a>
+                    </div>
+                </div>
+                <div style="background:var(--surface2);">
+                    <iframe src="https://ai-talent-match-intelligence.streamlit.app/?embedded=true"
+                        style="width:100%; height:650px; border:none; display:block;" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div style="margin-top:1.5rem;">
+                <h4>Scoring Formula</h4>
+                <ul style="margin-top:8px; padding-left:18px; font-size:14px; color:var(--ink2);">
+                    <li>Cognitive contributes highest weight (35%)</li>
+                    <li>Competency contributes 30%</li>
+                    <li>Behavioral contributes 25%</li>
+                    <li>Contextual contributes 10%</li>
+                    <li>Final output: Job Fit Score (%), ranked against median benchmark</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="sql">
+        <div class="container">
+            <div class="section-label">Technical Expertise</div>
+            <div class="section-title">SQL Analytics & AI Scoring</div>
+            <p class="section-desc">
+                Advanced SQL used to power business dashboards and data-driven candidate scoring application.
+                Covering KPI analytics, data aggregation, and multi-factor candidate scoring with benchmarking logic.
+            </p>
+
+            <div class="project-card">
+                <h3>📊 Business KPI Aggregation</h3>
+                <pre><code class="language-sql">SELECT
+    COUNT(DISTINCT order_id) AS total_orders,
+    COUNT(DISTINCT customer_id) AS unique_customers,
+    ROUND(SUM(sales), 2) AS total_revenue,
+    ROUND(SUM(profit), 2) AS total_profit,
+    ROUND(SUM(profit) / SUM(sales) * 100, 1) AS profit_margin_pct
+FROM orders;</code></pre>
+                <p class="project-desc">
+                    Aggregates core business metrics used in dashboard reporting including revenue, profit, and customer
+                    insights.
+                </p>
+                <div class="project-tags">
+                    <span class="tag tag-green">SQL</span>
+                    <span class="tag">KPI Analytics</span>
+                    <span class="tag">Data Aggregation</span>
+                </div>
+            </div>
+
+            <div class="project-card" style="margin-top:1rem;">
+                <h3>🤖 AI Talent Scoring Engine</h3>
+                <pre><code class="language-sql">SELECT
+    employee_id,
+    ROUND( (
+        cognitive_score * 0.30 +
+        competency_score * 0.30 +
+        behavioral_score * 0.20 +
+        contextual_score * 0.20
+    ), 2) AS final_match_rate
+FROM talent_scores
+ORDER BY final_match_rate DESC
+LIMIT 10;</code></pre>
+                <p class="project-desc">
+                    Multi-factor scoring model used to rank candidates based on skills, competencies, behavior, and
+                    experience.
+                </p>
+                <div class="project-tags">
+                    <span class="tag tag-green">SQL</span>
+                    <span class="tag">AI Scoring</span>
+                    <span class="tag">Ranking Model</span>
+                </div>
+            </div>
+
+            <div class="project-card" style="margin-top:1rem;">
+                <h3>⚡ Advanced SQL Logic (Benchmarking)</h3>
+                <pre><code class="language-sql">percentile_cont(0.5) 
+WITHIN GROUP (ORDER BY score) AS baseline_score</code></pre>
+                <p class="project-desc">
+                    Uses median-based benchmarking instead of average to reduce bias and improve scoring accuracy in
+                    talent evaluation.
+                </p>
+                <div class="project-tags">
+                    <span class="tag tag-green">Advanced SQL</span>
+                    <span class="tag">Window Function</span>
+                    <span class="tag">Data Modeling</span>
+                </div>
+            </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="section-label">Portfolio Projects</div>
+            <div class="section-title">Selected Works</div>
+            <p class="section-desc">Real analytics projects that delivered measurable insights and business impact.</p>
+
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                        <div class="project-icon" style="background:#EBF2FD; margin-bottom: 0;">📊</div>
+                        <a href="https://datastudio.google.com/embed/reporting/9136a5d9-ee26-48e8-af84-0d1e1dd80aea/page/uggvF"
+                            target="_blank" class="btn-card-action">Live App ↗</a>
+                    </div>
+                    <h3>Sales Dashboard & Data Analysis</h3>
+                    <div class="project-desc">
+                        Developed an interactive dashboard to monitor sales performance in real-time with high accuracy.
+                        <br><br><strong>Insights:</strong>
+                        <ul style="padding-left: 16px; margin-top: 4px;">
+                            <li>Top products contribute 30–40% of revenue</li>
+                            <li>Identified sales trends & seasonality</li>
+                            <li>Customer segmentation highlights high-value users</li>
+                        </ul>
+                    </div>
+                    <div class="project-impact">
+                        <strong>Impact:</strong>
+                        <ul>
+                            <li>Discounts above 20% turn profit negative flags pricing risk instantly</li>
+                            <li>Quadrant chart separates high margin vs high volume SKUs for prioritization</li>
+                        </ul>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag tag-blue">Power BI</span>
+                        <span class="tag tag-blue">SQL</span>
+                        <span class="tag">Looker Studio</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" style="transition-delay:0.32s">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                        <div class="project-icon" style="background:#EBF2FD; margin-bottom: 0;">🌪️</div>
+                        <div style="display:flex;gap:8px;">
+                            <a href="https://github.com/Intexcloud/Funnel-Analysis" target="_blank"
+                                class="dashboard-btn">View Code</a>
+                            <a href="https://datastudio.google.com/embed/reporting/25ebbe30-46af-4ea2-8f93-8673b6c5edee/page/xQFxF"
+                                target="_blank" class="btn-card-action">Live App ↗</a>
+                        </div>
+                    </div>
+                    <h3>E-Commerce Funnel Analysis</h3>
+                    <div class="project-desc">
+                        Mapped the end-to-end customer journey from <em>product view</em> to <em>final payment</em> to
+                        pinpoint conversion friction.
+                        <br><br><strong>Insights:</strong>
+                        <ul style="padding-left: 16px; margin-top: 4px;">
+                            <li>Isolated a high 33.8% cancellation rate across all payment methods.</li>
+                            <li>Pinpointed massive 59% return rates in Beauty and Apparel categories.</li>
+                            <li>Contrasted volume driven F&B revenue against high AOV Electronics sales.</li>
+                        </ul>
+                    </div>
+                    <div class="project-impact">
+                        <strong>Impact:</strong>
+                        <ul>
+                            <li>Identified 33.8% cancellation drop-off and flagged 59% peak category returns.</li>
+                            <li>Streamlined reporting by tracking 83.2% Conversion and 13.1% Return Rates.</li>
+                        </ul>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag tag-blue">SQL</span>
+                        <span class="tag tag-blue">Looker Studio</span>
+                        <span class="tag">Conversion Optimization</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" style="transition-delay:0.24s">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                        <div class="project-icon" style="background:#FAEEDA; margin-bottom: 0;">📈</div>
+                        <div style="display:flex;gap:8px;">
+                            <a href="https://github.com/Intexcloud/fmcg-ai-forecast" target="_blank"
+                                class="dashboard-btn">View Code</a>
+                            <a href="https://fmcg-ai-forecast.streamlit.app/" target="_blank"
+                                class="btn-card-action">Live App ↗</a>
+                        </div>
+                    </div>
+                    <h3>Demand Forecasting</h3>
+                    <div class="project-desc">
+                        Built an end-to-end ML pipeline to forecast monthly FMCG sales across multiple SKUs from 190k+
+                        transactions.
+                        <br><br><strong>Insights:</strong>
+                        <ul style="padding-left: 16px; margin-top: 4px;">
+                            <li>Compared XGBoost vs LightGBM, XGBoost selected automatically via RMSE (310.76 vs
+                                316.25).</li>
+                            <li>Lag features (1–6 months) capture seasonal demand patterns per SKU.</li>
+                            <li>Variance analysis flags over/under-forecast risk per product.</li>
+                        </ul>
+                    </div>
+                    <div class="project-impact">
+                        <strong>Impact:</strong>
+                        <ul>
+                            <li>Analyzed 190k+ transactions to minimize stockouts and overstock risks.</li>
+                            <li>Automated workflows to eliminate manual effort and human forecasting error.</li>
+                        </ul>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag tag-amber">Python</span>
+                        <span class="tag tag-amber">Pandas</span>
+                        <span class="tag">scikit-learn</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" style="transition-delay:0.16s">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                        <div class="project-icon" style="background:#FDECEC; margin-bottom: 0;">📉</div>
+                        <div style="display:flex;gap:8px;">
+                            <a href="https://github.com/Intexcloud/telcom-churn-analysis" target="_blank"
+                                class="dashboard-btn">View Code</a>
+                            <a href="https://datastudio.google.com/embed/reporting/5c0c882f-a70e-4008-a4cf-dee78a94dc18/page/UWNxF"
+                                target="_blank" class="btn-card-action">Live App ↗</a>
+                        </div>
+                    </div>
+                    <h3>Customer Churn Analysis</h3>
+                    <div class="project-desc">
+                        Created interactive churn dashboards to analyze retention risks, revenue exposure, and
+                        behavioral patterns.
+                        <br><br><strong>Insights:</strong>
+                        <ul style="padding-left: 16px; margin-top: 4px;">
+                            <li>Month to month customers showed the highest churn rate at 43%.</li>
+                            <li>Electronic check users recorded the highest churn propensity at 45%.</li>
+                            <li>Customer churn was heavily concentrated within the first 12 months of tenure.</li>
+                        </ul>
+                    </div>
+                    <div class="project-impact">
+                        <strong>Impact:</strong>
+                        <ul>
+                            <li>Detected 118.9K at risk revenue concentrated in short term contracts.</li>
+                            <li>Mapped early interventions to target high risk customer segments.</li>
+                        </ul>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag tag-blue">SQL</span>
+                        <span class="tag tag-blue">Looker Studio</span>
+                        <span class="tag">Customer Analytics</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" style="transition-delay:0.08s">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                        <div class="project-icon" style="background:#EEEDFE; margin-bottom: 0;">🤖</div>
+                        <div style="display:flex;gap:8px;">
+                            <a href="https://github.com/Intexcloud/Ai-Talent-Dashboard" target="_blank"
+                                class="dashboard-btn">View Code</a>
+                            <a href="https://ai-talent-match-intelligence.streamlit.app/" target="_blank"
+                                class="btn-card-action">Live App ↗</a>
+                        </div>
+                    </div>
+                    <h3>AI Talent Scoring System</h3>
+                    <div class="project-desc">
+                        Developed a scoring system to evaluate talent based on skills, experience, and performance.
+                        <br><br><strong>Insights:</strong>
+                        <ul style="padding-left: 16px; margin-top: 4px;">
+                            <li>EDA (heatmap, radar chart, correlation) uncovers success patterns from top performers
+                                (rating 5).</li>
+                            <li>Median-based SQL benchmarking via CTE + percentile_cont reduces scoring bias.</li>
+                            <li>LLM (OpenRouter API) generates job profiles dynamically from role context.</li>
+                        </ul>
+                    </div>
+                    <div class="project-impact">
+                        <strong>Impact:</strong>
+                        <ul>
+                            <li>Enables faster, objective succession decisions backed by structured data</li>
+                            <li>Reduces manual job profile writing from hours to seconds</li>
+                        </ul>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag tag-purple">Python</span>
+                        <span class="tag">SQL CTE</span>
+                        <span class="tag">LLM API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background:var(--surface);" id="sertifikasi">
+        <div class="container">
+            <div class="section-label">Training & Certifications</div>
+            <div class="section-title">Credentials</div>
+            <p class="section-desc">Certifications that strengthen my competence in data analysis and professional
+                development.</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+                <div class="fade-in"
+                    style="display:flex;align-items:flex-start;gap:14px;padding:1.25rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);">
+                    <div
+                        style="width:36px;height:36px;border-radius:9px;background:#EBF2FD;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;">
+                        🗄️</div>
+                    <div>
+                        <div style="font-size:13.5px;font-weight:500;color:var(--ink);margin-bottom:2px;">Oracle DB
+                            Design & Programming with SQL</div>
+                        <div style="font-size:12px;color:var(--ink3);">Oracle Academy</div>
+                    </div>
+                </div>
+                <div class="fade-in"
+                    style="display:flex;align-items:flex-start;gap:14px;padding:1.25rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);">
+                    <div
+                        style="width:36px;height:36px;border-radius:9px;background:#EAF3DE;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;">
+                        📊</div>
+                    <div>
+                        <div style="font-size:13.5px;font-weight:500;color:var(--ink);margin-bottom:2px;">Introduction
+                            to Data Analysis</div>
+                        <div style="font-size:12px;color:var(--ink3);">Online Certification</div>
+                    </div>
+                </div>
+                <div class="fade-in"
+                    style="display:flex;align-items:flex-start;gap:14px;padding:1.25rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);">
+                    <div
+                        style="width:36px;height:36px;border-radius:9px;background:#FAEEDA;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;">
+                        🐍</div>
+                    <div>
+                        <div style="font-size:13.5px;font-weight:500;color:var(--ink);margin-bottom:2px;">Crash Course
+                            on Python</div>
+                        <div style="font-size:12px;color:var(--ink3);">Google / Coursera</div>
+                    </div>
+                </div>
+                <div class="fade-in"
+                    style="display:flex;align-items:flex-start;gap:14px;padding:1.25rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);">
+                    <div
+                        style="width:36px;height:36px;border-radius:9px;background:#EEEDFE;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;">
+                        🔬</div>
+                    <div>
+                        <div style="font-size:13.5px;font-weight:500;color:var(--ink);margin-bottom:2px;">Python Project
+                            for Data Science</div>
+                        <div style="font-size:12px;color:var(--ink3);">IBM / Coursera</div>
+                    </div>
+                </div>
+                <div class="fade-in"
+                    style="display:flex;align-items:flex-start;gap:14px;padding:1.25rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);">
+                    <div
+                        style="width:36px;height:36px;border-radius:9px;background:#EAF3DE;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;">
+                        📗</div>
+                    <div>
+                        <div style="font-size:13.5px;font-weight:500;color:var(--ink);margin-bottom:2px;">Excel Basic
+                            for Data Analytics</div>
+                        <div style="font-size:12px;color:var(--ink3);">Online Certification</div>
+                    </div>
+                </div>
+                <div class="fade-in"
+                    style="display:flex;align-items:flex-start;gap:14px;padding:1.25rem;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);">
+                    <div
+                        style="width:36px;height:36px;border-radius:9px;background:#EBF2FD;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;">
+                        📈</div>
+                    <div>
+                        <div style="font-size:13.5px;font-weight:500;color:var(--ink);margin-bottom:2px;">Data
+                            Visualization & Dashboards — Excel & Cognos</div>
+                        <div style="font-size:12px;color:var(--ink3);">IBM / Coursera</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-label">Tech Stack</div>
+            <div class="section-title">Skills & Tools</div>
+            <p class="section-desc">A complete toolkit from data collection to visualization and predictive modeling.
+            </p>
+            <div class="skills-grid" id="skillsGrid">
+                <div class="skill-box fade-in">
+                    <div class="skill-box-icon">🗄️</div>
+                    <h4>SQL / Oracle DB</h4>
+                    <span class="skill-level level-advanced">Advanced</span>
+                </div>
+                <div class="skill-box fade-in">
+                    <div class="skill-box-icon">📊</div>
+                    <h4>Power BI</h4>
+                    <span class="skill-level level-advanced">Advanced</span>
+                </div>
+                <div class="skill-box fade-in">
+                    <div class="skill-box-icon">📗</div>
+                    <h4>Excel</h4>
+                    <span class="skill-level level-advanced">Advanced</span>
+                </div>
+                <div class="skill-box fade-in">
+                    <div class="skill-box-icon">🔍</div>
+                    <h4>Data Cleaning & Validation</h4>
+                    <span class="skill-level level-advanced">Advanced</span>
+                </div>
+                <div class="skill-box fade-in">
+                    <div class="skill-box-icon">🐍</div>
+                    <h4>Python</h4>
+                    <span class="skill-level level-intermediate">Intermediate</span>
+                </div>
+                <div class="skill-box fade-in">
+                    <div class="skill-box-icon">📈</div>
+                    <h4>Data Visualization</h4>
+                    <span class="skill-level level-intermediate">Intermediate</span>
+                </div>
+                <div class="skill-box fade-in">
+                    <div class="skill-box-icon">📡</div>
+                    <h4>Looker Studio</h4>
+                    <span class="skill-level level-intermediate">Intermediate</span>
+                </div>
+                <div class="skill-box fade-in">
+                    <div class="skill-box-icon">🧠</div>
+                    <h4>Data Storytelling</h4>
+                    <span class="skill-level level-intermediate">Intermediate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-inner">
+                <div class="avatar-wrap fade-in">
+                    <div class="avatar-img">
+                        <img src="avatar.png" style="width:100%;height:100%;object-fit:cover;object-position:top">
+                    </div>
+                    <div class="avatar-badge">
+                        📍 Tegal, Indonesia<br>
+                        🎓 Information Systems · GPA 3.73
+                    </div>
+                </div>
+
+                <div class="about-content fade-in">
+                    <div class="section-label">About Me</div>
+                    <div class="section-title">Detail-Oriented,<br>Data-Driven</div>
+                    <p class="about-body">
+                        Information Systems graduate from Universitas Kristen Satya Wacana with a GPA of 3.73. Skilled
+                        in data analysis, SQL, and Business Intelligence particularly Power BI and Excel to support
+                        data-driven decision making.
+                    </p>
+                    <p class="about-body">
+                        Experienced in data cleaning, validation, and descriptive analysis (trends, segmentation,
+                        business performance), as well as presenting insights through data storytelling to
+                        cross-functional stakeholders.
+                    </p>
+
+                    <ul class="exp-list">
+                        <li class="exp-item">
+                            <span class="exp-year">Jan–Mar 2025</span>
+                            <div class="exp-text">
+                                <h4>Data Analyst · Department of Communication & Informatics</h4>
+                                <p>Processed operational data into analytical reports, improved data accuracy to 95%,
+                                    and increased reporting efficiency by 10%.</p>
+                            </div>
+                        </li>
+                        <li class="exp-item">
+                            <span class="exp-year">Aug–Dec 2024</span>
+                            <div class="exp-text">
+                                <h4>Application Developer · Department of Marine Affairs & Fisheries</h4>
+                                <p>Developed data processing systems, improved operational efficiency by 15%, and
+                                    database storage efficiency by 25%.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-inner">
+                <div class="contact-info fade-in">
+                    <div class="section-label">Get In Touch</div>
+                    <div class="section-title">Let's Collaborate</div>
+                    <p class="section-desc" style="margin-bottom:2rem">Interested in discussing a data analytics
+                        project, data consultation, or just want to talk about data? Feel free to reach out.</p>
+
+                    <ul class="contact-link-list">
+                        <li class="contact-link-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <div style="font-size:11px;color:var(--ink3);margin-bottom:2px">Email</div>
+                                <a href="mailto:sandyaprlynto@gmail.com">sandyaprlynto@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="contact-link-item">
+                            <div class="contact-icon">💼</div>
+                            <div>
+                                <div style="font-size:11px;color:var(--ink3);margin-bottom:2px">LinkedIn</div>
+                                <a href="https://linkedin.com/in/sandyaprilyanto"
+                                    target="_blank">linkedin.com/in/sandyaprilyanto</a>
+                            </div>
+                        </li>
+                        <li class="contact-link-item">
+                            <div class="contact-icon">🐙</div>
+                            <div>
+                                <div style="font-size:11px;color:var(--ink3);margin-bottom:2px">GitHub</div>
+                                <a href="https://github.com/Intexcloud" target="_blank">github.com/Intexcloud</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="fade-in" style="transition-delay:0.1s">
+                    <div class="contact-form">
+                        <div class="form-row">
+                            <div>
+                                <label>Name</label>
+                                <input type="text" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label>Email</label>
+                                <input type="email" placeholder="john@company.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label>Subject</label>
+                            <input type="text" placeholder="Data Analytics Project Consultation">
+                        </div>
+                        <div>
+                            <label>Message</label>
+                            <textarea
+                                placeholder="Tell me about your project or what you'd like to discuss..."></textarea>
+                        </div>
+                        <button class="form-submit" onclick="handleSubmit(this)">Send Message →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>© 2025 <strong>Sandy Aprilyanto</strong>. Made with ❤️ in Indonesia.</div>
+        <div>Data Analyst · Open to Opportunities</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
