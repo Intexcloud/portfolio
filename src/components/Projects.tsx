@@ -26,7 +26,7 @@ const projects: Project[] = [
         ],
         tags: [{ text: 'Power BI', cls: 'tag-blue' }, { text: 'SQL', cls: 'tag-blue' }, { text: 'Looker Studio', cls: 'tag' }],
         liveUrl: 'https://datastudio.google.com/embed/reporting/9136a5d9-ee26-48e8-af84-0d1e1dd80aea/page/uggvF',
-        codeUrl: 'https://github.com/Intexcloud/sales-analytics',
+        codeUrl: 'https://github.com/Intexcloud/sales-analysis',
     },
     {
         icon: '🌪️', iconBg: '#EBF2FD',
